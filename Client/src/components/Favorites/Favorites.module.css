@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+.favoritesGrid{
+display: grid;
+grid-template-columns: repeat(auto-fill, 280px);
+gap: 90px;
+padding: 40px;
+justify-content: center;
+}
+.filters{
+  
+    place-content: center;
+    margin-top: 5vh;
+    align-items: center;
+    width: auto;
+}
+
+.selector{
+    font-family: 'Roboto Mono', monospace;
+    color:rgb(252, 252, 252);
+    font-size: 15px;
+    border:1px solid white;
+    border-radius: 6px;
+    background: linear-gradient(rgb(5, 7, 12), rgba(75, 75, 75, 0.8));
+    margin: 5px;
+    cursor: pointer;
+}
+.selectorOptions{
+    color: black;
+    
+}

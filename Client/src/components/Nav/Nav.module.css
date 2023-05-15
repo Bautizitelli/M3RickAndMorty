@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+.container{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5%;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+    font-family: Avenir-Heavy;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    border-bottom: 1px solid white;
+    margin: auto;
+}
+
+.link{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color:rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    position: relative;
+    padding: 0 10px;
+}
+.link::after{
+   content: "";
+   position: absolute;
+   background-color:rgb(255, 255, 255);
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -5px;
+   transition: 0.3s;
+}
+.link:hover{
+    color: white;
+}
+.link:hover:after {
+    width: 100%;
+}
+
+.button{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color:rgba(255, 255, 255, 0.8);
+    background: none;
+    border: none;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.button::after{
+    content: "";
+   position: absolute;
+   background-color:rgb(172, 0, 0);
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -5px;
+   transition: 0.3s;
+}
+.button:hover{
+    color: white
+}
+.button:hover:after {
+    width: 100%;
+}
