@@ -6,7 +6,7 @@ export default function Cards(props) {
    return (
       <div className={styles.cardsStyle}>
            { 
-            characters.map(({name, species, gender, image, id})=>{
+            characters.map(({name, species, gender, image, id, origin, status})=>{
                return <Card
                   name={name}
                   species={species}
@@ -14,6 +14,8 @@ export default function Cards(props) {
                   image ={image}
                   id={id}
                   onClose={props.onClose}
+                  origin={origin}
+                  status={status}
                />
             })
            }
